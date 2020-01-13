@@ -1,3 +1,5 @@
+// This uses https://deckofcardsapi.com/
+
 const express = require("express");
 const bodyParser = require("body-parser");
 const request = require("request");
@@ -46,7 +48,7 @@ app.post("/", function (req, rsp) {
         });
     });
 
-    rsp.write("<img src='' alt='Get a Job'></img>");
+    //rsp.write("<img src='' alt='Get a Job'></img>");
     rsp.write("<p>" + "Get a job" + "</p>");
     rsp.write("<h1>" + "Phil Sux" + "</h1>");
     rsp.send();
